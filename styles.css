@@ -2,77 +2,53 @@ body {
     background: rgb(160, 144, 109);
     color: rgb(247, 245, 241);
     font-family: "Courier New";
-}
-
-.main-container {
-    display:flex;
-    margin: 50px 80px;
-    padding: 10px 40px;
-    border: 4px solid rgb(247, 245, 241);
-    justify-content: center;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    flex: 0 1 0;
+    gap: 18px;
+    padding: 40px;
+    border: 4px solid rgb(247, 245, 241);
+    margin: 12px 20px;
+    min-width: 500px;
 }
 
-.title {
+.title,
+.sub-title {
     text-align: center;
     font-size: 50px;
+    text-decoration-line: underline;
+    text-underline-offset: 12px;
 }
 
-.description-container {
+.sub-title {
+    font-size: 30px;
+}
+
+.description-container,
+.ingredients-container,
+.steps-container {
     display:flex;
     flex-direction: column;
-}
-
-.desc {
-    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
 
 .pic {
     border: 5px solid rgb(247, 245, 241);
-    margin:10px;
-    align-self: center;
-    flex: auto;
 }
 
-.ingredients-container {
-    display:flex;
-    flex-direction: column;
+ul{
+    margin: 0;
+    padding: 0;
 }
 
-.ingredients {
-    text-align: center;
+ol {
+    margin: 0;
+    padding: 0px 40px;
 }
 
-.list {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-.steps-container {
-    display:flex;
-    flex-direction: column;
-}
-
-.steps {
+.text {
    text-align: justify
 }
-
-.sub-title {
-    text-align: center;
-    margin: 50px auto;
-    font-size: 30px;
-}
-
-/* 
-> Use display: flex; to create a flex container.
-> Use justify-content to define the horizontal alignment of items.
-> Use align-items to define the vertical alignment of items.
-> Use flex-direction if you need columns instead of rows.
-> Use the row-reverse or column-reverse values to flip item order.
-> Use order to customize the order of individual elements.
-> Use align-self to vertically align individual items.
-> Use flex to create flexible boxes that can stretch and shrink.
- */
